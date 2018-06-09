@@ -1088,8 +1088,8 @@ namespace WindowsFormsApp2
                         Console.WriteLine(array[i]);
                     }
 
-                    this.BeginInvoke((System.Windows.Forms.MethodInvoker)delegate () { button9.ForeColor = Color.Black; });
-                    this.BeginInvoke((System.Windows.Forms.MethodInvoker)delegate () { button9.Text = "Picture download external sites"; });
+                    this.BeginInvoke((System.Windows.Forms.MethodInvoker)delegate () { button10.ForeColor = Color.Black; });
+                    this.BeginInvoke((System.Windows.Forms.MethodInvoker)delegate () { button10.Text = "Picture download external sites"; });
 
                     System.Diagnostics.Process.Start(dlfolderpath);
                 });
@@ -1930,8 +1930,8 @@ namespace WindowsFormsApp2
                     int filecount = dir.GetFiles().Length;
                     for (int i = 0; i < htmlstrings.Length; i++)
                     {
-                        this.BeginInvoke((System.Windows.Forms.MethodInvoker)delegate () { button10.ForeColor = Color.Red; });
-                        this.BeginInvoke((System.Windows.Forms.MethodInvoker)delegate () { button10.Text = "Downloading"; });
+                        this.BeginInvoke((System.Windows.Forms.MethodInvoker)delegate () { button7.ForeColor = Color.Red; });
+                        this.BeginInvoke((System.Windows.Forms.MethodInvoker)delegate () { button7.Text = "Downloading"; });
 
                         if (htmlstrings[i].Contains(".webm") || htmlstrings[i].Contains(".mkv") || htmlstrings[i].Contains(".flv") || htmlstrings[i].Contains(".vob") || htmlstrings[i].Contains(".ogv") || htmlstrings[i].Contains(".ogg") || htmlstrings[i].Contains(".drc") || htmlstrings[i].Contains(".gif") || htmlstrings[i].Contains(".gifv") || htmlstrings[i].Contains(".mng") || htmlstrings[i].Contains(".avi") || htmlstrings[i].Contains(".mov") || htmlstrings[i].Contains(".qt") || htmlstrings[i].Contains(".wmv") || htmlstrings[i].Contains(".yuv") || htmlstrings[i].Contains(".rm") || htmlstrings[i].Contains(".rmvb") || htmlstrings[i].Contains(".asf") || htmlstrings[i].Contains(".amv") || htmlstrings[i].Contains(".mp4") || htmlstrings[i].Contains(".m4p") || htmlstrings[i].Contains(".m4v") || htmlstrings[i].Contains(".mpg") || htmlstrings[i].Contains(".mp2") || htmlstrings[i].Contains(".mpeg") || htmlstrings[i].Contains(".mpe") || htmlstrings[i].Contains(".mpv") || htmlstrings[i].Contains(".mpg") || htmlstrings[i].Contains(".mpeg") || htmlstrings[i].Contains(".m2v") || htmlstrings[i].Contains(".m4v") || htmlstrings[i].Contains(".svi") || htmlstrings[i].Contains(".3gp") || htmlstrings[i].Contains(".3g2") || htmlstrings[i].Contains(".mxf") || htmlstrings[i].Contains(".roq") || htmlstrings[i].Contains(".nsv") || htmlstrings[i].Contains(".flv") || htmlstrings[i].Contains(".f4v") || htmlstrings[i].Contains(".f4p") || htmlstrings[i].Contains(".f4a") || htmlstrings[i].Contains(".f4b"))
                         {
@@ -2312,8 +2312,8 @@ namespace WindowsFormsApp2
                     int filecount1 = dir.GetFiles().Length;
                     MessageBox.Show("Completed wit h" + errors + " errors " + "and " + (filecount1 - filecount) + " successful");
 
-                    this.BeginInvoke((System.Windows.Forms.MethodInvoker)delegate () { button10.ForeColor = Color.Black; });
-                    this.BeginInvoke((System.Windows.Forms.MethodInvoker)delegate () { button10.Text = "Video"; });
+                    this.BeginInvoke((System.Windows.Forms.MethodInvoker)delegate () { button7.ForeColor = Color.Black; });
+                    this.BeginInvoke((System.Windows.Forms.MethodInvoker)delegate () { button7.Text = "Video"; });
 
                     System.Diagnostics.Process.Start(dlfolderpath);
                 });
